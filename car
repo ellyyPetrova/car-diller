@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Project0501
+{
+   public class Car
+    {
+        public readonly Car Model;
+        public readonly string Color;
+        public readonly int Year;
+
+        private float price;
+        public float Price
+        {
+            get { return price; }
+        }
+        internal Car(Car model, string color, float price, int year)
+        {
+            this.Model = model;
+            this.Color = color;
+            this.price = price;
+            this.Year = year;
+        }
+
+        }
+    }
